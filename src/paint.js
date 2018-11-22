@@ -90,7 +90,7 @@ const wordcloud = () => ({
 
     d3cloud().size([this.Width, this.Height])
       .words(words)
-      .padding(5)
+      .padding(15)
       .timeInterval(10)
       .rotate(function () {
         return scaleRotate(Math.round(Math.random() * (+layout.Orientations - 1)));
