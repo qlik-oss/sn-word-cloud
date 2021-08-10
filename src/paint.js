@@ -147,6 +147,9 @@ const wordcloud = () => ({
 });
 
 function paint($element, layout, component) {
+  if ($element.height() < 10 || $element.width() < 10) {
+    return;
+  }
   var id = "wordcloud_" + layout.qInfo.qId;
 
   $('<div />')
