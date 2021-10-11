@@ -1,0 +1,17 @@
+.wordcloud {
+  font-family: QlikView Sans;
+}
+.selected,
+.selectable {
+  cursor: pointer;
+}
+
+.selected {
+  stroke-width: 1;
+  stroke: #666;
+  opacity: 1;
+}
+
+.in-selections .selectable {
+  opacity: 0.7;
+}

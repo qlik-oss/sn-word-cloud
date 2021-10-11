@@ -1,0 +1,7 @@
+{
+  "module": "esm/index.js",
+  "peerDependencies": {
+    "@nebula.js/stardust": ">=2.0.0",
+    "d3": ">=7.1.1"
+  }
+}
