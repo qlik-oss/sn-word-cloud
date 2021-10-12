@@ -21,6 +21,8 @@ $RECYCLE.BIN/
 node_modules/
 dist/
 BUMPED_VERSION
+sn-word-cloud-ext/
+core/esm/
 
 # =========================
 # Operating System Files

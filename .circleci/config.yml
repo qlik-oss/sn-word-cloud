@@ -38,9 +38,8 @@ jobs:
       - run:
           name: Build and package
           command: |
-            yarn build && yarn sense
-            sudo chmod +x scripts/verify-files.sh
-            scripts/verify-files.sh
+            yarn build
+            yarn sense
           environment:
             NODE_ENV: production
       - persist_to_workspace:
