@@ -34,7 +34,7 @@ jobs:
           at: ~/qlik-word-cloud
       - run:
           name: Install dependencies
-          command: npm install
+          command: yarn
       - run:
           name: Build and package
           command: |

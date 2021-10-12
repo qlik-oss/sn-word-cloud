@@ -40,6 +40,6 @@
     "d3": "7.1.1"
   },
   "peerDependencies": {
-    "@nebula.js/stardust": ">=1.0.0"
+    "@nebula.js/stardust": ">=2.0.0"
   }
 }
