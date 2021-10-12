@@ -11,7 +11,7 @@
     "watch": "nebula serve --type sn-word-cloud",
     "watch:legacy": "nebula serve --type qlik-word-cloud",
     "build": "nebula build --core core",
-    "sense": "nebula sense --meta resources/meta.json && shx cp assets/wordcloud.png sn-word-cloud-ext",
+    "sense": "nebula sense --meta resources/meta.json && shx cp resources/wordcloud.png sn-word-cloud-ext",
     "eslint": "eslint src",
     "spec": "sy -c ./spec-configs/props.conf.js",
     "prepublishOnly": "shx rm -rf dist && shx rm -rf core/esm && shx rm -rf sn-network-chart-ext && yarn build && yarn sense"
