@@ -37,6 +37,7 @@
     "eslint-loader": "2.1.1",
     "jquery": "3.3.1",
     "random-js": "1.0.8",
+    "shx": "^0.3.3",
     "d3": "7.1.1"
   },
   "peerDependencies": {
