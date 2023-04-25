@@ -25,7 +25,7 @@
     "gulp": "4.0.0",
     "gulp-util": "^3.0.7",
     "gulp-zip": "3.0.2",
-    "jquery": "3.3.1",
+    "jquery": "3.5.0",
     "less": "3.8.1",
     "less-loader": "4.1.0",
     "random-js": "1.0.8",
