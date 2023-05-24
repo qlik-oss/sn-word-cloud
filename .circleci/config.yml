@@ -3,11 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/qlik-word-cloud
   docker:
-    - image: circleci/node:stretch
-  environment:
-    GITHUB_ORG: "qlik-oss"
-    GITHUB_REPO: "br.com.clever.wordcloud"
-    PACKAGE_NAME: "qlik-word-cloud"
+    - image: cimg/node:lts-browsers
 
 jobs:
   build:
