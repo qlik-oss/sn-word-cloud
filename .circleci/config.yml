@@ -10,7 +10,7 @@ defaults: &defaults
     PACKAGE_NAME: "qlik-word-cloud"
 
 jobs:
-  test:
+  blackduck:
     docker:
       - image: circleci/node:stretch-browsers
     steps:
@@ -54,7 +54,7 @@ workflows:
   version: 2
   master_flow:
     jobs:
-      - test
+      - blackduck
       - build:
           requires:
-            - test
+            - blackduck

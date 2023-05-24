@@ -2,6 +2,7 @@ import {
   useElement,
   useStaleLayout,
   usePromise,
+  useRect,
   useSelections,
 } from "@nebula.js/stardust";
 import data from "./extension/data";
@@ -10,13 +11,6 @@ import properties from "./extension/properties";
 import paint from "./paint";
 
 import "./styles.css";
-
-/*
-clearSelectedValues(a){
-    a.find(".selected")[0].classList.replace("selected","selectable"); //to make it "look" faster
-    this.$scope.selectionsApi.cancel();
-  },
-*/
 
 export default function supernova() {
   return {
@@ -28,6 +22,7 @@ export default function supernova() {
       const el = useElement();
       const layout = useStaleLayout();
       const selections = useSelections();
+      const rect = useRect();
 
       usePromise(() => {
         const component = {
@@ -47,7 +42,7 @@ export default function supernova() {
           },
         };
         return paint(el, layout, component);
-      }, [el, layout, selections]);
+      }, [el, layout, selections, rect]);
     },
     ext: ext(),
   };

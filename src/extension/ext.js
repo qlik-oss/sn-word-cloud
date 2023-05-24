@@ -269,6 +269,10 @@ export default function ext() {
                 "Word cloud chart is based upon an extension created by Clever Anjos.",
               component: "text",
             },
+            paragraph3: {
+              label: "sn-word-cloud",
+              component: "text",
+            },
           },
         },
       },

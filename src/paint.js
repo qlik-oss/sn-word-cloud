@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 import $ from "jquery";
 import d3cloud from "d3-cloud";
-import Random from "random-js";
+import { Random, MersenneTwister19937 } from "random-js";
 
 const RANDOM_SEED = 0x12345;
 
@@ -136,9 +136,7 @@ const wordcloud = () => ({
       .scaleLinear()
       .domain([0, +layout.Orientations - 1])
       .range([from, to]); // Input [0,1] convert into output [-90,90]
-    const r = new Random(
-      Random.engines.mt19937().seed(RANDOM_SEED + words.length)
-    );
+    const r = new Random(MersenneTwister19937.seed(RANDOM_SEED + words.length));
     var self = this;
     return new Promise(function (resolve) {
       d3cloud()
