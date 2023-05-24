@@ -10,22 +10,6 @@ defaults: &defaults
     PACKAGE_NAME: "qlik-word-cloud"
 
 jobs:
-  blackduck:
-    docker:
-      - image: circleci/node:stretch-browsers
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: yarn
-      - run:
-          name: BlackDuck scan
-          command: curl -s https://detect.synopsys.com/detect.sh | bash -s -- \
-            --blackduck.url="https://qliktech.blackducksoftware.com" \
-            --blackduck.trust.cert=true \
-            --blackduck.username="svc-blackduck" \
-            --blackduck.password=${svc_blackduck} \
-            --detect.project.name="viz-bundle-qlik-word-cloud"
   build:
     <<: *defaults
     steps:
@@ -54,7 +38,4 @@ workflows:
   version: 2
   master_flow:
     jobs:
-      - blackduck
-      - build:
-          requires:
-            - blackduck
+      - build
