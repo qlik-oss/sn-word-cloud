@@ -1311,6 +1311,16 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@playwright/test@1.34.0":
+  version "1.34.0"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.34.0.tgz#1f3359523c3fd7460c83fe83c8152751a9e21f49"
+  integrity sha512-GIALJVODOIrMflLV54H3Cow635OfrTwOu24ZTDyKC66uchtFX2NcCRq83cLdakMjZKYK78lODNLQSYBj2OgaTw==
+  dependencies:
+    "@types/node" "*"
+    playwright-core "1.34.0"
+  optionalDependencies:
+    fsevents "2.3.2"
+
 "@qlik/sdk@^0.21.1":
   version "0.21.1"
   resolved "https://registry.yarnpkg.com/@qlik/sdk/-/sdk-0.21.1.tgz#e0ecdc3ea160885957b1d7dcdbea823883635254"
@@ -3615,7 +3625,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fsevents@~2.3.2:
+fsevents@2.3.2, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
@@ -5134,6 +5144,11 @@ pkg-dir@^1.0.0:
   integrity sha1-ektQio1bstYp1EcFb/TpyTFM89Q=
   dependencies:
     find-up "^1.0.0"
+
+playwright-core@1.34.0:
+  version "1.34.0"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.34.0.tgz#6a8f05c657400677591ed82b6749ef7e120a152d"
+  integrity sha512-fMUY1+iR6kYbJF/EsOOqzBA99ZHXbw9sYPNjwA4X/oV0hVF/1aGlWYBGPVUEqxBkGANDKMziYoOdKGU5DIP5Gg==
 
 portfinder@1.0.32:
   version "1.0.32"
