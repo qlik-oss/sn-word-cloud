@@ -5,13 +5,13 @@ export default () => {
         getLayout() {
           return {
             qInfo: {
-              qId: "zbNHWs",
-              qType: "sn-word-cloud",
+              qId: "EjfVC",
+              qType: "qlik-word-cloud",
             },
-            qSelectionInfo: {
-              qInSelections: false,
-              qMadeSelections: false,
+            qMeta: {
+              privileges: ["read", "update", "delete"],
             },
+            qSelectionInfo: {},
             qHyperCube: {
               qSize: {
                 qcx: 2,
@@ -19,16 +19,16 @@ export default () => {
               },
               qDimensionInfo: [
                 {
-                  qFallbackTitle: "Product Group",
-                  qApprMaxGlyphCount: 19,
-                  qCardinal: 17,
+                  qFallbackTitle: "Customer Name",
+                  qApprMaxGlyphCount: 22,
+                  qCardinal: 216,
                   qSortIndicator: "A",
-                  qGroupFallbackTitles: ["Product Group"],
+                  qGroupFallbackTitles: ["Customer Name"],
                   qGroupPos: 0,
                   qStateCounts: {
                     qLocked: 0,
                     qSelected: 0,
-                    qOption: 17,
+                    qOption: 216,
                     qDeselected: 0,
                     qAlternative: 0,
                     qExcluded: 0,
@@ -44,96 +44,52 @@ export default () => {
                     qUseThou: 1,
                     qFmt: "##############",
                     qDec: ".",
-                    qThou: ",",
                   },
                   qIsAutoFormat: true,
-                  qGroupFieldDefs: ["Product Group Desc"],
+                  qGroupFieldDefs: ["Customer Name"],
                   qMin: "NaN",
                   qMax: "NaN",
                   qAttrExprInfo: [],
-                  qAttrDimInfo: [
-                    {
-                      qCardinal: 17,
-                      qSize: {
-                        qcx: 2,
-                        qcy: 8,
-                      },
-                      qFallbackTitle: "Product Group",
-                      id: "colorByAlternative",
-                      colorMapRef: "rAWLLGj",
-                    },
-                  ],
+                  qAttrDimInfo: [],
                   qCardinalities: {
-                    qCardinal: 17,
+                    qCardinal: 216,
                     qHypercubeCardinal: 10,
-                  },
-                  title: "Product Group",
-                  coloring: {
-                    colorMapRef: "rAWLLGj",
-                    changeHash: "0.6784502254237292",
+                    qAllValuesCardinal: -1,
                   },
                   autoSort: true,
-                  cId: "fJemSj",
+                  cId: "wZwMtd",
                   othersLabel: "Others",
                 },
               ],
               qMeasureInfo: [
                 {
-                  qFallbackTitle: "# of Products",
-                  qApprMaxGlyphCount: 3,
+                  qFallbackTitle: "Sum([Order Quantity])",
+                  qApprMaxGlyphCount: 5,
                   qCardinal: 0,
                   qSortIndicator: "D",
                   qNumFormat: {
-                    qType: "I",
-                    qnDec: 0,
+                    qType: "R",
+                    qnDec: 14,
                     qUseThou: 1,
-                    qFmt: "###0",
+                    qFmt: "##############",
                     qDec: ".",
                   },
-                  qMin: 27,
-                  qMax: 143,
+                  qMin: 555,
+                  qMax: 896,
                   qIsAutoFormat: true,
                   qAttrExprInfo: [],
                   qAttrDimInfo: [],
-                  coloring: {
-                    baseColor: {
-                      color: "#ec00d7",
-                      index: -1,
-                    },
-                    gradient: {
-                      colors: [
-                        {
-                          color: "#ff009f",
-                          index: -1,
-                        },
-                        {
-                          color: "#13ff00",
-                          index: -1,
-                        },
-                        {
-                          color: "#ff0033",
-                          index: -1,
-                        },
-                        {
-                          color: "#1e07ec",
-                          index: -1,
-                        },
-                      ],
-                      breakTypes: [false, true, false],
-                      limits: [0.1, 0.503, 1],
-                      limitType: "percent",
-                    },
-                  },
+                  qTrendLines: [],
                   autoSort: true,
-                  cId: "mKnua",
+                  cId: "mvVPyZE",
                   numFormatFromTemplate: true,
                 },
               ],
-              qEffectiveInterColumnSortOrder: [1, 0],
+              qEffectiveInterColumnSortOrder: [0, 1],
               qGrandTotalRow: [
                 {
-                  qText: "824",
-                  qNum: 824,
+                  qText: "44662",
+                  qNum: 44662,
                   qElemNumber: -1,
                   qState: "X",
                   qIsTotalCell: true,
@@ -144,220 +100,140 @@ export default () => {
                   qMatrix: [
                     [
                       {
-                        qText: "Produce",
-                        qNum: "NaN",
-                        qElemNumber: 12,
-                        qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Produce",
-                              qElemNo: 12,
-                            },
-                          ],
-                        },
-                      },
-                      {
-                        qText: "130",
-                        qNum: 130,
-                        qElemNumber: 0,
-                        qState: "L",
-                      },
-                    ],
-                    [
-                      {
-                        qText: "Snack Foods",
-                        qNum: "NaN",
-                        qElemNumber: 14,
-                        qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Snack Foods",
-                              qElemNo: 14,
-                            },
-                          ],
-                        },
-                      },
-                      {
-                        qText: "107",
-                        qNum: 107,
-                        qElemNumber: 0,
-                        qState: "L",
-                      },
-                    ],
-                    [
-                      {
-                        qText: "Frozen Foods",
-                        qNum: "NaN",
-                        qElemNumber: 10,
-                        qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Frozen Foods",
-                              qElemNo: 10,
-                            },
-                          ],
-                        },
-                      },
-                      {
-                        qText: "93",
-                        qNum: 93,
-                        qElemNumber: 0,
-                        qState: "L",
-                      },
-                    ],
-                    [
-                      {
-                        qText: "Canned Foods",
-                        qNum: "NaN",
-                        qElemNumber: 5,
-                        qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Canned Foods",
-                              qElemNo: 5,
-                            },
-                          ],
-                        },
-                      },
-                      {
-                        qText: "88",
-                        qNum: 88,
-                        qElemNumber: 0,
-                        qState: "L",
-                      },
-                    ],
-                    [
-                      {
-                        qText: "Dairy",
-                        qNum: "NaN",
-                        qElemNumber: 7,
-                        qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Dairy",
-                              qElemNo: 7,
-                            },
-                          ],
-                        },
-                      },
-                      {
-                        qText: "80",
-                        qNum: 80,
-                        qElemNumber: 0,
-                        qState: "L",
-                      },
-                    ],
-                    [
-                      {
-                        qText: "Baking Goods",
-                        qNum: "NaN",
-                        qElemNumber: 2,
-                        qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Baking Goods",
-                              qElemNo: 2,
-                            },
-                          ],
-                        },
-                      },
-                      {
-                        qText: "72",
-                        qNum: 72,
-                        qElemNumber: 0,
-                        qState: "L",
-                      },
-                    ],
-                    [
-                      {
-                        qText: "Beverages",
+                        qText: "Carlos Soltero",
                         qNum: "NaN",
                         qElemNumber: 3,
                         qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Beverages",
-                              qElemNo: 3,
-                            },
-                          ],
-                        },
                       },
                       {
-                        qText: "59",
-                        qNum: 59,
+                        qText: "896",
+                        qNum: 896,
                         qElemNumber: 0,
                         qState: "L",
                       },
                     ],
                     [
                       {
-                        qText: "Deli",
+                        qText: "Christina Vanderzanden",
                         qNum: "NaN",
-                        qElemNumber: 8,
+                        qElemNumber: 92,
                         qState: "O",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qText: "Deli",
-                              qElemNo: 8,
-                            },
-                          ],
-                        },
                       },
                       {
-                        qText: "53",
-                        qNum: 53,
+                        qText: "627",
+                        qNum: 627,
                         qElemNumber: 0,
                         qState: "L",
                       },
                     ],
                     [
                       {
-                        qText: "-",
+                        qText: "Doug Bickford",
                         qNum: "NaN",
-                        qElemNumber: -2,
-                        qState: "L",
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qElemNo: -2,
-                            },
-                          ],
-                        },
-                        qIsNull: true,
+                        qElemNumber: 40,
+                        qState: "O",
                       },
                       {
-                        qText: "27",
-                        qNum: 27,
+                        qText: "563",
+                        qNum: 563,
                         qElemNumber: 0,
                         qState: "L",
                       },
                     ],
                     [
                       {
-                        qText: "Others",
+                        qText: "Erica Bern",
                         qNum: "NaN",
-                        qElemNumber: -3,
-                        qState: "L",
-                        qIsOtherCell: true,
-                        qAttrDims: {
-                          qValues: [
-                            {
-                              qElemNo: -2,
-                            },
-                          ],
-                        },
+                        qElemNumber: 70,
+                        qState: "O",
                       },
                       {
-                        qText: "143",
-                        qNum: 143,
+                        qText: "588",
+                        qNum: 588,
+                        qElemNumber: 0,
+                        qState: "L",
+                      },
+                    ],
+                    [
+                      {
+                        qText: "Grant Carroll",
+                        qNum: "NaN",
+                        qElemNumber: 16,
+                        qState: "O",
+                      },
+                      {
+                        qText: "582",
+                        qNum: 582,
+                        qElemNumber: 0,
+                        qState: "L",
+                      },
+                    ],
+                    [
+                      {
+                        qText: "Joy Smith",
+                        qNum: "NaN",
+                        qElemNumber: 72,
+                        qState: "O",
+                      },
+                      {
+                        qText: "754",
+                        qNum: 754,
+                        qElemNumber: 0,
+                        qState: "L",
+                      },
+                    ],
+                    [
+                      {
+                        qText: "Maria Bertelson",
+                        qNum: "NaN",
+                        qElemNumber: 197,
+                        qState: "O",
+                      },
+                      {
+                        qText: "600",
+                        qNum: 600,
+                        qElemNumber: 0,
+                        qState: "L",
+                      },
+                    ],
+                    [
+                      {
+                        qText: "Matt Abelman",
+                        qNum: "NaN",
+                        qElemNumber: 153,
+                        qState: "O",
+                      },
+                      {
+                        qText: "555",
+                        qNum: 555,
+                        qElemNumber: 0,
+                        qState: "L",
+                      },
+                    ],
+                    [
+                      {
+                        qText: "Sally Knutson",
+                        qNum: "NaN",
+                        qElemNumber: 96,
+                        qState: "O",
+                      },
+                      {
+                        qText: "842",
+                        qNum: 842,
+                        qElemNumber: 0,
+                        qState: "L",
+                      },
+                    ],
+                    [
+                      {
+                        qText: "Sonia Sunley",
+                        qNum: "NaN",
+                        qElemNumber: 102,
+                        qState: "O",
+                      },
+                      {
+                        qText: "635",
+                        qNum: 635,
                         qElemNumber: 0,
                         qState: "L",
                       },
@@ -383,54 +259,77 @@ export default () => {
               qNoOfLeftDims: -1,
               qTreeNodesOnDim: [],
               qColumnOrder: [],
-              qHasOtherValues: true,
+              qHasOtherValues: false,
             },
+            script: "",
             showTitles: true,
             title: "",
             subtitle: "",
             footnote: "",
-            showDetails: false,
-            donut: {
-              showAsDonut: false,
+            disableNavMenu: false,
+            showDetails: true,
+            showDetailsExpression: false,
+            Orientations: 8,
+            RadStart: -90,
+            RadEnd: 90,
+            MaxSize: 100,
+            MinSize: 20,
+            Scale: "linear",
+            customRange: false,
+            colorFrom: {
+              index: -1,
+              color: "#4477aa",
             },
-            dimensionTitle: true,
-            dataPoint: {
-              auto: true,
-              labelMode: "share",
+            colorTo: {
+              index: -1,
+              color: "#ffcf02",
             },
-            color: {
-              auto: false,
-              mode: "byDimension",
-              useBaseColors: "off",
-              paletteColor: {
-                index: 12,
+            ScaleColor: [
+              "#FEE391",
+              "#FEC44F",
+              "#FE9929",
+              "#EC7014",
+              "#CC4C02",
+              "#993404",
+              "#662506",
+            ],
+            visualization: "qlik-word-cloud",
+            version: 1,
+            extensionMeta: {
+              translationKey: "",
+              icon: "treemap",
+              iconChar: "puzzle",
+              isLibraryItem: true,
+              visible: true,
+              name: "Word cloud chart",
+              description:
+                "A graphic representation of a text dimension where size is based on the measure value.\nVersion: 0.36.0",
+              template: "qlik-word-cloud",
+              iconPath:
+                "M14.5,9 L13,9 L13,3.3 C13,3.1 12.9,3 12.7,3 L8,3 L8,1.5 C8,0.7 7.3,0 6.5,0 C5.7,0 5,0.7 5,1.5 L5,3 L0.3,3 C0.1,3 0,3.1 0,3.3 L0,9 L1.5,9 C2.3,9 3,9.7 3,10.5 C3,11.3 2.3,12 1.5,12 L0,12 L0,15.7 C0,15.9 0.1,16 0.3,16 L5,16 L5,14.5 C5,13.7 5.7,13 6.5,13 C7.3,13 8,13.7 8,14.5 L8,16 L12.7,16 C12.9,16 13,15.9 13,15.7 L13,12 L14.5,12 C15.3,12 16,11.3 16,10.5 C16,9.7 15.3,9 14.5,9 Z",
+              isThirdParty: true,
+              type: "visualization",
+              version: "0.36.0",
+              preview: "wordcloud.png",
+              keywords: "qlik-sense, visualization",
+              author: "Clever Anjos <clever@clever.com.br>",
+              homepage: "",
+              license: "Apache License 2.0",
+              repository: "https://github.com/qlik-oss/br.com.clever.wordcloud",
+              dependencies: {
+                "qlik-sense": ">=5.5.x",
               },
-              useDimColVal: true,
-              useMeasureGradient: true,
-              persistent: false,
-              expressionIsColor: true,
-              expressionLabel: "",
-              measureScheme: "sg",
-              reverseScheme: false,
-              dimensionScheme: "12",
-              autoMinMax: true,
-              measureMin: 0,
-              measureMax: 10,
-              byDimDef: {
-                label: "rAWLLGj",
-                key: "rAWLLGj",
-                type: "libraryItem",
-                activeDimensionIndex: 0,
+              bundle: {
+                id: "qlik-visualization-bundle",
+                name: "Qlik Visualization bundle",
+                description:
+                  "This is a set of supported objects that expands the visualization capabilities of Qlik Sense. These can be used in addition to the objects found under 'Charts'. For support conditions and limitations, see the documentation.",
               },
-              altLabel: "rAWLLGj",
+              installer: "QlikExtensionBundler",
+              folder: "_visualization-bundle",
+              previewIconURL:
+                "https://megaman.eu.tsm.pte.qlikdev.com/resources/_visualization-bundle/qlik-word-cloud/wordcloud.png",
             },
-            legend: {
-              show: true,
-              dock: "top",
-              showTitle: true,
-            },
-            visualization: "sn-word-cloud",
-            qHasSoftPatches: false,
           };
         },
         getEffectiveProperties: {},
