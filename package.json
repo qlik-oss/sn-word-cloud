@@ -14,7 +14,8 @@
     "sense": "nebula sense --meta resources/meta.json && shx cp resources/wordcloud.png sn-word-cloud-ext",
     "eslint": "eslint src",
     "spec": "sy -c ./spec-configs/props.conf.js",
-    "prepublishOnly": "shx rm -rf dist && shx rm -rf core/esm && shx rm -rf sn-network-chart-ext && yarn build && yarn sense"
+    "test:rendering": "playwright test --config=./test/rendering/playwright.config.rendering.js",
+    "prepublishOnly": "shx rm -rf dist && shx rm -rf core/esm && shx rm -rf sn-word-cloud-ext && yarn build && yarn sense"
   },
   "files": [
     "api-specifications",
@@ -32,6 +33,7 @@
     "@nebula.js/stardust": "4.0.3",
     "@scriptappy/from-jsdoc": "0.17.0",
     "@scriptappy/cli": "0.8.0",
+    "@playwright/test": "1.34.0",
     "babel-eslint": "10.0.1",
     "d3-cloud": "1.2.5",
     "eslint": "8.41.0",
