@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A graphic representation of a text dimension where size is based on the measure value.",
   "homepage": "",
-  "repository": "https://github.com/qlik-oss/br.com.clever.wordcloud",
+  "repository": "https://github.com/qlik-oss/sn-word-cloud",
   "author": "QLIK",
   "license": "MIT",
   "scripts": {
