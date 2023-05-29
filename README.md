@@ -14,8 +14,6 @@ Requires `@nebula.js/stardust` version `2.0.0` or later.
 
 ## Installing
 
-Pending..
-<!---
 If you use npm: `npm install @nebula.js/sn-word-cloud`.
 
 You can also load through the script tag directly from [https://unpkg.com](https://unpkg.com/@nebula.js/sn-word-cloud).
@@ -30,7 +28,7 @@ import word from '@nebula.js/sn-word-cloud';
 const nuked = embed(app, {
   types: [
     {
-      // register grid chart - qlik-word-cloud is the default name in sense
+      // register word cloud - qlik-word-cloud is the default name in sense
       name: 'qlik-word-cloud',
       load: () => Promise.resolve(wordcloud),
     },
@@ -47,7 +45,10 @@ nuked.render({
   },
 });
 ```
--->
 # Original author
 
 [github.com/cleveranjos](https://github.com/cleveranjos)
+
+## License
+
+`@nebula.js/sn-word-cloud` is [MIT licensed](./LICENSE).
