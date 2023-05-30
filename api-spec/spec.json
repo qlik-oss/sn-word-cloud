@@ -1,0 +1,102 @@
+{
+  "scriptappy": "1.1.0",
+  "info": {
+    "name": "@nebula.js/sn-word-cloud:properties",
+    "description": "Word cloud generic object definition",
+    "version": "0.1.1",
+    "license": "MIT",
+    "stability": "experimental",
+    "x-qlik-visibility": "public"
+  },
+  "entries": {},
+  "definitions": {
+    "module.exports.version": {
+      "description": "Current version of this generic object definition",
+      "type": "string"
+    },
+    "module.exports.qHyperCubeDef": {
+      "description": "Extends `HyperCubeDef`, see Engine API: `HyperCubeDef`.",
+      "extends": [
+        {
+          "type": "EngineAPI.HyperCubeDef"
+        }
+      ],
+      "kind": "object"
+    },
+    "module.exports.ScaleColor": {
+      "description": "Color scale to use",
+      "kind": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "module.exports.Orientations": {
+      "description": "Number of orientations to use",
+      "defaultValue": 2,
+      "type": "number"
+    },
+    "module.exports.MinSize": {
+      "description": "Font size minimum",
+      "defaultValue": 20,
+      "type": "number"
+    },
+    "module.exports.MaxSize": {
+      "description": "Font size maximun",
+      "defaultValue": 100,
+      "type": "number"
+    },
+    "module.exports.RadStart": {
+      "description": "Rotation start in degrees",
+      "type": "number"
+    },
+    "module.exports.RadEnd": {
+      "description": "Rotation end in degrees",
+      "defaultValue": 90,
+      "type": "number"
+    },
+    "module.exports.Scale": {
+      "description": "Scale type, linear or logarithmic",
+      "defaultValue": "linear",
+      "kind": "union",
+      "items": [
+        {
+          "kind": "literal",
+          "value": "'linear'"
+        },
+        {
+          "kind": "literal",
+          "value": "'log'"
+        }
+      ]
+    },
+    "module.exports.customRange": {
+      "description": "Use of a custom range",
+      "optional": true,
+      "defaultValue": false,
+      "type": "boolean"
+    },
+    "module.exports.customRangeFrom": {
+      "description": "Custom coloring from color",
+      "type": "#/definitions/customRangeConfig"
+    },
+    "module.exports.customRangeTo": {
+      "description": "Custom coloring to color",
+      "type": "#/definitions/customRangeConfig"
+    },
+    "customRangeConfig": {
+      "kind": "function",
+      "params": [],
+      "entries": {
+        "index": {
+          "description": "Index in palette",
+          "type": "number"
+        },
+        "color": {
+          "description": "Custom color not from palette",
+          "defaultValue": "ffcf02",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
