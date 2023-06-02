@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/qlik-word-cloud
   docker:
-    - image: cimg/node:lts-browsers
+    - image: cimg/node:18.16.0-browsers
 
 jobs:
   build:
