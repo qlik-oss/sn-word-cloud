@@ -1,0 +1,7 @@
+name: Component test
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: qlik-oss/sn-gh-workflows/.github/workflows/component-test.yaml@v1
