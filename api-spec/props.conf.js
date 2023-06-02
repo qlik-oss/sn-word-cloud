@@ -19,7 +19,7 @@ module.exports = {
       sort: {
         alpha: false,
       },
-      file: "./api-spec/spec.json",
+      file: "./api-specifications/properties.json",
     },
     parse: {
       types: {
@@ -34,7 +34,7 @@ module.exports = {
     },
   },
   toDts: {
-    spec: "./api-spec/spec.json",
+    spec: "./api-specifications/properties.json",
     output: {
       file: "./types/index.d.ts",
     },
