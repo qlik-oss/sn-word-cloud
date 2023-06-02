@@ -1,6 +1,6 @@
 {
   "name": "@nebula.js/sn-word-cloud",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A graphic representation of a text dimension where size is based on the measure value.",
   "homepage": "",
   "repository": "https://github.com/qlik-oss/sn-word-cloud",
