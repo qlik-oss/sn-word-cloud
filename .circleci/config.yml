@@ -14,9 +14,7 @@ jobs:
           at: ~/qlik-word-cloud
       - run:
           name: Install dependencies
-          command: |
-            pnpm -v
-            pnpm i --frozen-lockfile
+          command: pnpm i
       - run:
           name: Build and package
           command: |
