@@ -14,12 +14,12 @@ jobs:
           at: ~/qlik-word-cloud
       - run:
           name: Install dependencies
-          command: yarn
+          command: pnpm install
       - run:
           name: Build and package
           command: |
-            yarn build
-            yarn sense
+            pnpm build
+            pnpm sense
           environment:
             NODE_ENV: production
       - run:
@@ -28,7 +28,7 @@ jobs:
             npx playwright install
       - run:
           name: Rendering tests
-          command: yarn test:rendering
+          command: pnpm test:rendering
       - store_artifacts:
           path: test/rendering/index.spec.js-snapshots
       - store_artifacts:
