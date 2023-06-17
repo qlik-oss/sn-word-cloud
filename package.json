@@ -38,7 +38,7 @@
     "d3": "7.8.5",
     "d3-cloud": "1.2.5",
     "eslint": "8.43.0",
-    "eslint-loader": "2.2.1",
+    "eslint-loader": "4.0.2",
     "jquery": "3.7.0",
     "random-js": "2.1.0",
     "shx": "^0.3.4"
