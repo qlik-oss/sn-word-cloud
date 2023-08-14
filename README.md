@@ -39,10 +39,11 @@ nuked.render({
   },
 });
 ```
-# Original author
-
-[github.com/cleveranjos](https://github.com/cleveranjos)
 
 ## License
 
 `@nebula.js/sn-word-cloud` is [MIT licensed](./LICENSE).
+
+## Original author
+
+[github.com/cleveranjos](https://github.com/cleveranjos)
