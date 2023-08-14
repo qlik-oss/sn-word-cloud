@@ -23,7 +23,8 @@ dist/
 BUMPED_VERSION
 sn-word-cloud-ext/
 core/esm/
-test-results
+test/rendering/test-report
+*.zip
 
 # =========================
 # Operating System Files
