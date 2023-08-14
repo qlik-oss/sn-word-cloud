@@ -1,3 +1,5 @@
+import { devices } from "@playwright/test";
+
 const config = {
   use: {
     // Run the browser in headless mode
