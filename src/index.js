@@ -30,8 +30,6 @@ function supernova() {
       const selections = useSelections();
       const rect = useRect();
 
-      el.setAttribute("background-color", "red");
-
       usePromise(() => {
         const component = {
           beginSelections: (root) => {
