@@ -1,13 +1,7 @@
-# @nebula.js/sn-word-cloud
-The word cloud is built using d3 and d3-cloud. It was originally forked from cleveranjos/br.com.clever.wordcloud and has since been converted to use Nebula.
+# sn-word-cloud
+A word cloud chart aimed to be used in nebula.js built using d3 and d3-cloud.
 
 This extension is part of the extension bundles for Qlik Sense. The repository is maintained and moderated by Qlik R&D.
-
-## Legacy build
-The chart before Nebula conversion and dependency updates can be found on the release/legacy branch.
-
-Feel free to fork and suggest pull requests for improvements and bug fixes. Changes will be moderated and reviewed before inclusion in future bundle versions. Please note that emphasis is on backward compatibility, i.e. breaking changes will most likely not be approved.
-
 ## Requirements
 
 Requires `@nebula.js/stardust` version `2.0.0` or later.
