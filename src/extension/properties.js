@@ -1,4 +1,8 @@
-export default {
+/**
+ * @typedef {object}
+ * @entry
+ */
+const properties = {
   /**
    * Current version of this generic object definition
    * @type {string}
@@ -99,3 +103,5 @@ const customRangeConfig = {
    */
   color: "ffcf02",
 };
+
+export default properties;

@@ -12,7 +12,13 @@ import paint from "./paint";
 
 import "./styles.css";
 
-export default function supernova() {
+const metaData = {
+  name: "Word cloud",
+  icon: "treemap",
+  id: "sn-word-cloud",
+};
+
+function supernova() {
   return {
     qae: {
       properties,
@@ -23,6 +29,8 @@ export default function supernova() {
       const layout = useStaleLayout();
       const selections = useSelections();
       const rect = useRect();
+
+      el.setAttribute("background-color", "red");
 
       usePromise(() => {
         const component = {
@@ -47,3 +55,7 @@ export default function supernova() {
     ext: ext(),
   };
 }
+
+supernova.metaData = metaData;
+
+export default supernova;

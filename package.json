@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nebula serve --build false --type qlik-word-cloud",
+    "start:mfe": "nebula serve --mfe --type sn-word-cloud",
     "watch": "nebula serve --type sn-word-cloud",
     "watch:legacy": "nebula serve --type qlik-word-cloud",
     "build": "nebula build --core core",
