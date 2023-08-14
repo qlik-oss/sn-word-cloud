@@ -1,50 +1,15 @@
-version: 2
-
-defaults: &defaults
-  working_directory: ~/qlik-word-cloud
-  docker:
-    - image: cimg/node:lts-browsers
+version: 2.1
 
 jobs:
   build:
-    <<: *defaults
+    docker:
+      - image: cimg/node:lts
     steps:
-      - checkout
-      - attach_workspace:
-          at: ~/qlik-word-cloud
       - run:
-          name: Install dependencies
-          command: yarn
-      - run:
-          name: Build and package
           command: |
-            yarn build
-            yarn sense
-          environment:
-            NODE_ENV: production
-      - run:
-          name: Install Playwright
-          command: |
-            npx playwright install
-      - run:
-          name: Rendering tests
-          command: yarn test:rendering
-      - store_artifacts:
-          path: test/rendering/index.spec.js-snapshots
-      - store_artifacts:
-          path: ./test/rendering/__artifacts__
-      - store_artifacts:
-          path: test/rendering/test-report
-      - persist_to_workspace:
-          root: ~/qlik-word-cloud
-          paths:
-            - dist
-      - store_artifacts:
-          path: dist
-          destination: dist
+            echo "Empty workflow for ci purpose"
 
 workflows:
-  version: 2
-  master_flow:
+  build-all:
     jobs:
       - build

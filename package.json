@@ -15,7 +15,7 @@
     "sense": "nebula sense --meta resources/meta.json && shx cp resources/wordcloud.png sn-word-cloud-ext",
     "eslint": "eslint src",
     "spec": "sy from-jsdoc -c ./api-spec/props.conf.js",
-    "test:rendering": "playwright test --config=./test/rendering/playwright.config.rendering.js",
+    "test:e2e": "playwright test --config=./test/rendering/playwright.config.rendering.js",
     "prepublishOnly": "shx rm -rf dist && shx rm -rf core/esm && shx rm -rf sn-word-cloud-ext && yarn build && yarn sense"
   },
   "files": [
