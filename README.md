@@ -31,7 +31,7 @@ const nuked = embed(app, {
 
 // Rendering a simple word cloud
 nuked.render({
-  element: document.querySelector('.wordcloud'),
+  element: document.querySelector('.wordCloud'),
   type: 'qlik-word-cloud',
   fields: ['WordsField', '=Sum(SizeField)'],
   properties: {
