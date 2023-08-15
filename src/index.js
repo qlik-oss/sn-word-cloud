@@ -12,13 +12,7 @@ import paint from "./paint";
 
 import "./styles.css";
 
-const metaData = {
-  name: "Word cloud",
-  icon: "treemap",
-  id: "sn-word-cloud",
-};
-
-function supernova() {
+export default function supernova() {
   return {
     qae: {
       properties,
@@ -53,7 +47,3 @@ function supernova() {
     ext: ext(),
   };
 }
-
-supernova.metaData = metaData;
-
-export default supernova;
