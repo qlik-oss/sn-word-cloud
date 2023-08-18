@@ -6,7 +6,7 @@ module.exports = {
   fromJsdoc: {
     glob: ["./src/extension/properties.js"],
     api: {
-      stability: "experimental",
+      stability: "stable",
       visibility: "public",
       properties: {
         "x-qlik-visibility": "public",
