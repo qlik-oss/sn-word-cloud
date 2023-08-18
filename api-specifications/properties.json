@@ -3,7 +3,7 @@
   "info": {
     "name": "@nebula.js/sn-word-cloud:properties",
     "description": "Word cloud generic object definition",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "MIT",
     "stability": "stable",
     "x-qlik-visibility": "public"
