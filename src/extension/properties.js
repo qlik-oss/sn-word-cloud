@@ -1,5 +1,6 @@
 /**
- * @typedef {object}
+ * @type {object}
+ * @extends {GenericObjectProperties}
  * @entry
  */
 const properties = {
@@ -72,7 +73,7 @@ const properties = {
   customRange: false,
   /**
    * Custom coloring from color
-   * @type {customRangeConfig}
+   * @type {PaletteColor}
    */
   customRangeFrom: {
     index: -1,
@@ -80,7 +81,7 @@ const properties = {
   },
   /**
    * Custom coloring to color
-   * @type {customRangeConfig}
+   * @type {PaletteColor}
    */
   customRangeTo: {
     index: -1,
@@ -89,19 +90,11 @@ const properties = {
 };
 
 /**
- * @typedef {object}
+ * Color information structure. Holds the actual color and index in palette
+ * @typedef {object} PaletteColor
+ * @property {string} color - Color as hex string (mandatory if index: -1)
+ * @property {number} index - Index in palette
  */
-const customRangeConfig = {
-  /**
-   * Index in palette
-   * @type {Number}
-   */
-  index: -1,
-  /**
-   * Custom color not from palette
-   * @type {string}
-   */
-  color: "ffcf02",
-};
+
 
 export default properties;

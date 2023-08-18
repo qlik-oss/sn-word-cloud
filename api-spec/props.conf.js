@@ -23,6 +23,9 @@ module.exports = {
     },
     parse: {
       types: {
+        GenericObjectProperties: {
+          url: "https://qlik.dev/apis/json-rpc/qix/schemas#%23%2Fdefinitions%2Fschemas%2Fentries%2FGenericObjectProperties",
+        },
         undefined: {},
         "EngineAPI.ValueExpression": {
           url: "https://qlik.dev/apis/json-rpc/qix/schemas#%23%2Fdefinitions%2Fschemas%2Fentries%2FValueExpression",

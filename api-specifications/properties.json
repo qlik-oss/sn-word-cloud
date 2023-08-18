@@ -10,8 +10,11 @@
   },
   "entries": {
     "properties": {
-      "kind": "function",
-      "params": [],
+      "extends": [
+        {
+          "type": "GenericObjectProperties"
+        }
+      ],
       "entries": {
         "version": {
           "description": "Current version of this generic object definition",
@@ -80,28 +83,31 @@
         },
         "customRangeFrom": {
           "description": "Custom coloring from color",
-          "type": "#/definitions/customRangeConfig"
+          "type": "#/definitions/PaletteColor"
         },
         "customRangeTo": {
           "description": "Custom coloring to color",
-          "type": "#/definitions/customRangeConfig"
+          "type": "#/definitions/PaletteColor"
         }
-      }
+      },
+      "kind": "object"
     }
   },
   "definitions": {
-    "customRangeConfig": {
-      "kind": "function",
-      "params": [],
-      "entries": {
-        "index": {
-          "description": "Index in palette",
-          "type": "number"
-        },
-        "color": {
-          "description": "Custom color not from palette",
-          "defaultValue": "ffcf02",
-          "type": "string"
+    "PaletteColor": {
+      "description": "Color information structure. Holds the actual color and index in palette",
+      "kind": "alias",
+      "items": {
+        "kind": "object",
+        "entries": {
+          "color": {
+            "description": "Color as hex string (mandatory if index: -1)",
+            "type": "string"
+          },
+          "index": {
+            "description": "Index in palette",
+            "type": "number"
+          }
         }
       }
     }
