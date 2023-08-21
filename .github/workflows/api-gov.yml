@@ -1,0 +1,38 @@
+name: "API Governance"
+
+on:
+  workflow_dispatch:
+    inputs:
+      VERSION:
+        type: string
+        description: Version to run against
+        default: ''
+      SHA:
+        type: string
+        description: Sha of tag
+        default: ''
+
+jobs:
+  api-gov:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Prepare API Compliance
+        shell: bash
+        run: |
+          docker pull ghcr.io/qlik-download/api-compliance
+          docker create -v /specs --name specs alpine:3.4 /bin/true
+          docker cp api-specifications/properties.json specs:/specs/properties.json
+
+      - name: Run API Compliance
+        shell: bash
+        run: |
+          docker run --volumes-from specs \
+              -e SPEC_PATHS="${{ secrets.API_KEY }}@/specs/properties.json" \
+              -e COMMIT_SHA="${{ inputs.SHA }}" \
+              -e RELEASE_TAG="${{ inputs.VERSION }}" \
+              -e CREDENTIALS_S3_SECRETKEY="${{ secrets.APICULTURIST_S3 }}" \
+              -e CREDENTIALS_GITHUB="${{ secrets.APICULTURIST_GITHUB }}" \
+              -e CREDENTIALS_COLONY="${{ secrets.APICULTURIST_TOKEN }}" \
+              ghcr.io/qlik-download/api-compliance
