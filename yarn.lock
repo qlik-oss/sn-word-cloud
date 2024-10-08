@@ -1416,7 +1416,12 @@
     import-cwd "3.0.0"
     yargs "17.7.2"
 
-"@nebula.js/stardust@4.3.0", "@nebula.js/stardust@^4.3.0":
+"@nebula.js/stardust@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@nebula.js/stardust/-/stardust-5.6.0.tgz#6c41ff08f136c72c3636c09f865af06ee9c92e1e"
+  integrity sha512-QCjwO6u4e7ofBbxdpXfb1o+SaNbHpjeg3b4czeXfE99XRAGMkBtvwoB5L4zxzEyeSLq5oE9/Fga+iWbjmpSqXw==
+
+"@nebula.js/stardust@^4.3.0":
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/@nebula.js/stardust/-/stardust-4.3.0.tgz#83164ca3f6d66e396576a34d50d1194cf72f8e17"
   integrity sha512-K+DEFvxs0dRz5LL1iBCpeNo0F4srbyKQ0o9PFMbIF1wQOYOYDb8pEprIu2hp7S5zS6f1aZz+GA0n0mQDbpgIsA==

@@ -30,7 +30,7 @@
     "@nebula.js/cli-build": "4.3.0",
     "@nebula.js/cli-sense": "4.3.0",
     "@nebula.js/cli-serve": "4.3.0",
-    "@nebula.js/stardust": "4.3.0",
+    "@nebula.js/stardust": "5.6.0",
     "@playwright/test": "1.37.0",
     "@scriptappy/cli": "0.8.0",
     "@scriptappy/from-jsdoc": "0.17.0",
